@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин | Барбершоп «Бородинский»</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="small-logo">
+          <img src="img/index-small-logo.png" alt="Барбершоп «Бородинский»">
+        </div>
+        <nav class="main-navigation"><!--так и не разобралась, зачем nav в доп контейнер оборачивать.
+          Для отцентровки в будущем? Но почему нельзя это сделать с nav?-->
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="#" class="active">Магазин</a><!--лучше оставить тут ссылку, а потом в css менять подчеркивание, чтобы показать, что она активна?-->
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
+      </div>
+    </header>
+    <main class="shop">
+      <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
+      <ul class="breadscrumbs">
+        <li><!--в примере в блоке новостей в элементы списка были вложены <p>, зачем?
+              (я скопипастила, но кажется можно обойтись просто li?)-->
+          <p class="nav-item">ГЛАВНАЯ</p>
+        </li>
+        <li>
+          <p class="nav-item">МАГАЗИН</p>
+        </li>
+        <li>
+          <p class="nav-item">СРЕДСТВА ДЛЯ УХОДА</p>
+        </li>
+      </ul>
+      <form class="preferences" action="#" method="get">
+        <fieldset class="producers">
+          <legend>ПРОИЗВОДИТЕЛИ</legend>
+          <ul>
+            <li>
+              <input type="checkbox" id="producer-1">
+              <label for="producer-1">Baxter of California</label>
+            </li>
+            <li>
+              <input type="checkbox" id="producer-2">
+              <label for="producer-2">Mr Natty</label>
+            </li>
+            <li>
+              <input type="checkbox" id="producer-3">
+              <label for="producer-3">Suavecito</label>
+            </li>
+            <li>
+              <input type="checkbox" id="producer-4">
+              <label for="producer-4">Malin+Goetz</label>
+            </li>
+            <li>
+              <input type="checkbox" id="producer-5">
+              <label for="producer-5">Murray’s</label>
+            </li>
+            <li>
+              <input type="checkbox" id="producer-6">
+              <label for="producer-6">American Crew</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="groups">
+          <legend>ГРУППЫ ТОВАРОВ:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" id="group-1">
+              <label for="group-1">Бритвенные  принадлежности</label>
+            </li>
+            <li>
+              <input type="checkbox" id="group-2">
+              <label for="group-2">Средства для ухода</label>
+            </li>
+            <li>
+              <input type="checkbox" id="group-3">
+              <label for="group-3">Аксессуары</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <div class="assortment">
+        <article class="item">
+          <img src="img/item-1.png" alt="Набор для путешествий  «Baxter of California»">
+          <p>Набор для путешествий  «Baxter of California»</p>
+          <span>2 900 руб.</span>
+          <a class="buy" href="#">Купить</a>
+        </article>
+        <article class="item">
+          <img src="img/item-2.png" alt="Увлажняющий кондиционер  «Baxter of California»">
+          <p>Увлажняющий кондиционер  «Baxter of California»</p>
+          <span>750 руб.</span>
+          <a class="buy" href="#">Купить</a>
+        </article>
+        <article class="item">
+          <img src="img/item-3.png" alt="Гель для волос «SUAVECITO»">
+          <p>Гель для волос «SUAVECITO»</p>
+          <span>290 руб.</span>
+          <a class="buy" href="#">Купить</a>
+        </article>
+        <article class="item">
+          <img src="img/item-4.png" alt="Глина для укладки волос  «American crew»">
+          <p>Глина для укладки волос  «American crew»</p>
+          <span>500 руб.</span>
+          <a class="buy" href="#">Купить</a>
+        </article>
+        <article class="item">
+          <img src="img/item-5.png" alt="Гель для волос «AMERICAN CREW»">
+          <p>Гель для волос «AMERICAN CREW»</p>
+          <span>300 руб.</span>
+          <a class="buy" href="#">Купить</a>
+        </article>
+        <article class="item">
+          <img src="img/item-6.png" alt="Набор для бритья «Baxter of California»">
+          <p>Набор для бритья «Baxter of California»</p>
+          <span>3500 руб.</span>
+          <a class="buy" href="#">Купить</a>
+        </article>
+        <ul class="pages-list">
+          <li class="page-item">
+            <a href="#">1</a>
+          </li>
+          <li class="page-item page-active">
+            <a href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#">4</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="#">Как нас найти?</a><br>
+          Телефон: +7 (812) 666-02-66
+        </section>
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+            <p>Разработано:</p>
+            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
+    </body>
+  </html>
