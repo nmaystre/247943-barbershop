@@ -1,0 +1,32 @@
+body {
+  font-size: 14pt;
+  line-height: 24pt;
+  color: black;
+  font-weight: bold;
+  font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif;
+  text-transform: uppercase; /* добавила заодно */
+}
+
+h1 {
+  font-size: 48pt;
+  line-height: 48pt;
+  color: black; /* Правда мне кажется не надо прописывать последние 3 пункта каждый раз, они же наследуются?*/
+  font-weight: bold;
+  font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif;
+}
+
+h2 {
+  font-size: 30pt;
+  line-height: 42pt;
+  color: black;
+  font-weight: bold;
+  font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif;
+}
+
+h3 {
+  font-size: 24pt;
+  line-height: 30pt;
+  color: black;
+  font-weight: bold;
+  font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif;
+}
